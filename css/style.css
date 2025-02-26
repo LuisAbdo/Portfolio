@@ -1,0 +1,189 @@
+
+/* Importando fontes do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+a:visited {
+    color: inherit; /* Isso mantém a cor do link igual à cor normal */
+}
+:root{
+--main-color: #5A3EBA ;
+--text-color: #ffffff;
+--bg-volor-01: #1f242d;
+--bg-volor-02:#323946;
+--color-00: #0000001a;
+/* extra */
+--color-01: #9999;
+ 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none
+}
+html{
+    font-family: 'JetBrains Mono', monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+   background-color: #1f242d;
+   color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem;
+    background-color: var(--bg-volor-02);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+    border: solid 1px var(--color-00);
+}
+.logo{
+    font-size: 1.7rm;
+    color: var(--text-color);
+ font-weight: 600; 
+cursor: default;
+}
+.nav a {
+    font-size: var(1.2rem);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+    border: solid 1px var(--color-00);
+}
+.nav a:hover{
+  color: var(--main-color);  
+}
+section{
+    min-height: 100vh;
+    padding: 6rem 6rem 2rem;
+
+    border: solid 1px var(--color-00);
+}
+span{
+    color: #5A3EBA ;
+}
+
+.home, .about{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+.home-img {
+    border-left: solid 0.6rem var(--bg-volor-02);
+}
+.home-img img {
+    width: 100%;
+
+}
+.home-content h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.home-content h1 {
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-content p {
+    margin-top: 1.2rem;
+    text-align: justify;
+}
+.services h2,
+.porfolio h2,
+.contact h2{
+font-size: 2.2rem;
+margin-bottom:1rem ;
+text-align: center;
+}
+.services-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.services-box {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+min-height: 25rem;
+margin-bottom: 1rem;
+
+}
+.services-container .services-box {
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 1.2;
+    text-align: center;
+    border: solid 0.15rem var(--bg-volor-01);
+    background-color: #1f242d;
+    transition: 0,5s ease;
+
+}
+.services-container .services-box:hover{
+    border-color: #5A3EBA;
+    transform: scale(1.01);
+}
+.services-box i {
+    font-size: 4rem;
+    color: var(--main-color)
+    
+}
+.services-box h3 {
+    font: size 1.5rem;
+
+}
+.services-box p {
+    margin: 0.5rem;
+    letter-spacing:0.1rem;
+    display: -webkit-box;
+    line-clamp: 4;
+overflow: hidden;
+text-overflow: ellipsis;
+
+}
+/* button*/
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+background-color: #5A3EBA;
+color: black;
+font-weight: 600;
+letter-spacing: 0.1rem;
+transition: 0.3s ease;
+margin-top: 1.2rem;
+
+}
+.btn:hover {
+    box-shadow: 0 0 0.3rem;
+background-color: inherit;
+color: var(--main-color);
+cursor: pointer;
+}
+/* button */
+.portfolio {
+    display: grid;
+gap: 1.2rem;
+}
+.porfolio-box {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(transparent, white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(30rem);
+    transition: 0.5 ease;
+}
